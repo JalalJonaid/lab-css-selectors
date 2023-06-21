@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Intro</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   </head>
   <body>
     <h1>Your Name Here</h1>
@@ -18,25 +17,30 @@
       </p>
     </div>
 
-    <img src="./assets/avatar-gfe7eab2c5_640.png" alt="Profile photo" />
+    <img class="profile-photo"
+      src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+      alt="Profile photo"
+    />
 
     <div>
       <h2>Here are some of my Skills!</h2>
-
-      <h3 class="languages">Languages</h3>
+      <div class="skills-header">
+      <h3>Languages</h3>
       <ul>
         <li>JavaScript</li>
         <li>SQL</li>
         <li>HTML5</li>
         <li>CSS3</li>
       </ul>
+    </div>
 
       <h3>Libraries</h3>
-      <ul class="libraries">
+      <ol>
         <li>React</li>
+        <li>PostgreSQL</li>
         <li>Node</li>
         <li>Bootstrap</li>
-      </ul>
+      </ol>
     </div>
 
     <div>
@@ -48,24 +52,23 @@
       <p>I came up with a totally sick solution though by doing ...</p>
     </div>
 
-    <ul class="links">
-      <li><a href="#">github link</a></li>
-      <li><a href="#">LinkedIn link</a></li>
-      <li><a href="#">Angel list link</a></li>
-      <li><a href="#">Pursuit link</a></li>
+    <h2>Contact Me</h2>
+    <div>
+      Email me at:
+      <a href="#" target="_top">hello@pursuit.org</a>
+    </div>
+  
+    <ul>
+    <li><a href="#">github link</a></li>
+    <li><a href="#">LinkedIn link</a></li>
+    <li><a href="#">Angel list link</a></li>
+    <li><a href="#">Pursuit link</a></li>
     </ul>
+   
 
-    <footer>
-      <h2>Contact Me</h2>
-      <div>
-        <h4>Email me at:</h4>
-        <a href="#" target="_top">hello@pursuit.org</a>
-      </div>
-      <form>
-        <label>Provide feedback:</label>
-        <input type="text" name="" value="" />
-        <input type="submit" name="submit" value="submit" />
-      </form>
-    </footer>
+    <form action="index.html" method="post">
+      <input type="text" name="" value="" />
+      <input type="submit" name="submit" value="submit" />
+    </form>
   </body>
 </html>
